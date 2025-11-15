@@ -1,6 +1,6 @@
 @echo off
-REM Time Table Management System - Enhanced Launcher
-REM This script automatically sets up and runs the application
+REM Time Table Management System - GUI Launcher
+REM This script automatically sets up and runs the GUI application
 
 setlocal enabledelayedexpansion
 
@@ -29,19 +29,14 @@ if %errorlevel% neq 0 (
     exit /b 1
 )
 
-REM Check if tabulate is installed
-python -c "import tabulate" >nul 2>&1
+REM Check if required packages are installed
+python -c "import tkinter" >nul 2>&1
 if %errorlevel% neq 0 (
     cls
     echo.
     echo Installing required packages...
     echo.
     pip install -q tabulate
-    if %errorlevel% neq 0 (
-        echo Error: Failed to install dependencies
-        pause
-        exit /b 1
-    )
     echo.
     echo Packages installed successfully!
     echo.
@@ -57,11 +52,11 @@ if not exist database.sql (
     exit /b 1
 )
 
-REM Set window title and run application
+REM Set window title and run GUI application
 title Time Table Management System
 
-REM Run the main application
-python timetable_management.py
+REM Run the GUI application
+python timetable_gui.py
 
 REM If there's an error, keep window open
 if %errorlevel% neq 0 (

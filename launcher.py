@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 """
-Time Table Management System - Direct Launcher
-This script runs the application and can be converted to an executable using PyInstaller
+Time Table Management System - GUI Launcher
+This script runs the GUI application and can be converted to an executable using PyInstaller
 """
 import subprocess
 import sys
@@ -11,9 +11,9 @@ def main():
     script_dir = os.path.dirname(os.path.abspath(__file__))
     os.chdir(script_dir)
     
-    # Run the main application
+    # Run the GUI application
     try:
-        subprocess.run([sys.executable, 'timetable_management.py'], check=True)
+        subprocess.run([sys.executable, 'timetable_gui.py'], check=True)
     except subprocess.CalledProcessError:
         sys.exit(1)
     except KeyboardInterrupt:

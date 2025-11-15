@@ -1,0 +1,12 @@
+TIME TABLE MANAGEMENT SYSTEM - REPORT
+Generated: 2025-11-15 18:29:10
+================================================================================
+
+Class A1 | Dr. John Smith | CS301 | Monday | 08:00 | Lecture
+Lab 1 | Dr. Rajesh Kumar | CS305 | Monday | 09:00 | Lab
+Class A1 | Prof. Sarah Johnson | MATH201 | Monday | 10:15 | Lecture
+Class A2 | Prof. Sarah Johnson | MATH201 | Tuesday | 09:00 | Lecture
+Class B1 | Dr. Michael Chen | PHY301 | Wednesday | 10:15 | Lecture
+Class B1 | Dr. John Smith | CS301 | Wednesday | 13:00 | Practical
+Class A2 | Prof. Sarah Johnson | MATH201 | Wednesday | 13:00 | Tutorial
+Class B2 | Prof. Emma Wilson | ENG201 | Thursday | 11:15 | Lecture
